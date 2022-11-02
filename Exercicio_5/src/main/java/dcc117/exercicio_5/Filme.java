@@ -9,6 +9,24 @@ public class Filme {
     private String paisOrigem;
     private String duracao;
     private List <Sessao> sessoes;
+    private Genero genero;
+    private List<Papel> papeis;
+
+    public List<Papel> getPapeis() {
+        return papeis;
+    }
+
+    public void setPapeis(List<Papel> papeis) {
+        this.papeis = papeis;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
 
     public Filme(String titulo, int ano, String produtora, String paisOrigem, String duracao, List<Sessao> sessoes) {
         this.titulo = titulo;
@@ -65,5 +83,9 @@ public class Filme {
 
     public void setDuracao(String duracao) {
         this.duracao = duracao;
+    }
+
+    public void addPapel(Papel papel) {
+        papeis.add(papel);
     }
 }

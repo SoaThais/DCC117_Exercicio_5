@@ -52,7 +52,7 @@ public class Sessao {
             Date dataAtual = new Date();
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
             String dataFormatada = dateFormat.format(dataAtual);
-            ingresso.setDataHoraCompra(dataFormatada);
+            ingresso.setData(dataFormatada);
             this.setIngressosComprados(this.getIngressosComprados() + 1);
             this.setIngressosRestantes(this.getIngressosRestantes() - 1);
         }
