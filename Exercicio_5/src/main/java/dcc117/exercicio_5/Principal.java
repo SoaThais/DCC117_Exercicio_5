@@ -40,6 +40,7 @@ public class Principal {
         inteira = new Ingresso(i, 67, "Inteira", 55.80F, "27/09/2019");
         meia.setSessao(sessao);
         inteira.setSessao(sessao);
+        sessao.exibirSessao();
         sessao.venderIngressos(meia);
         sessao.venderIngressos(inteira);
         meia.ImprimirIngresso();
